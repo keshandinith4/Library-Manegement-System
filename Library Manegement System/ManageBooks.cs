@@ -10,28 +10,11 @@ using System.Windows.Forms;
 
 namespace Library_Manegement_System
 {
-    public partial class Members : Form
+    public partial class ManageBooks : Form
     {
-        public Members()
+        public ManageBooks()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void backbtn_Click(object sender, EventArgs e)
-        {
-            Books books = new Books();
-            books.Show();
-            this.Hide();
         }
 
         private void logoutbtn_Click(object sender, EventArgs e)
@@ -49,6 +32,13 @@ namespace Library_Manegement_System
 
                 this.Hide();
             }
+        }
+
+        private void backbtn_Click(object sender, EventArgs e)
+        {
+            Books books = new Books();
+            books.Show();
+            this.Hide();
         }
     }
 }

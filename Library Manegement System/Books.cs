@@ -19,7 +19,9 @@ namespace Library_Manegement_System
 
         private void bookbtn_Click(object sender, EventArgs e)
         {
-
+            ManageBooks f2 = new ManageBooks();
+            f2.Show();
+            this.Hide();
         }
 
         private void logoutbtn_Click(object sender, EventArgs e)

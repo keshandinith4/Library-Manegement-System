@@ -71,6 +71,7 @@
             this.issuebooksbtn.TabIndex = 7;
             this.issuebooksbtn.Text = "Issue Books";
             this.issuebooksbtn.UseVisualStyleBackColor = false;
+            this.issuebooksbtn.Click += new System.EventHandler(this.issuebooksbtn_Click);
             // 
             // button1
             // 
@@ -83,6 +84,7 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "Return Books";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // logoutbtn
             // 

@@ -41,16 +41,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label14 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.logoutbtn = new System.Windows.Forms.Button();
             this.backbtn = new System.Windows.Forms.Button();
@@ -189,12 +189,65 @@
             this.panel2.Size = new System.Drawing.Size(311, 156);
             this.panel2.TabIndex = 12;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(20, 114);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(270, 31);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Return Book";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(104, 49);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(1);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2100, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(1999, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(186, 20);
+            this.dateTimePicker1.TabIndex = 20;
+            this.dateTimePicker1.Value = new System.DateTime(2026, 5, 4, 14, 32, 3, 0);
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(104, 80);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(1);
+            this.dateTimePicker2.MaxDate = new System.DateTime(2100, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker2.MinDate = new System.DateTime(1999, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(186, 20);
+            this.dateTimePicker2.TabIndex = 21;
+            this.dateTimePicker2.Value = new System.DateTime(2026, 5, 4, 14, 32, 3, 0);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(17, 55);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(68, 13);
+            this.label14.TabIndex = 18;
+            this.label14.Text = "Issue Date";
+            // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(156, 16);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(134, 20);
             this.textBox3.TabIndex = 4;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(17, 86);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(61, 13);
+            this.label13.TabIndex = 19;
+            this.label13.Text = "Due Date";
             // 
             // label9
             // 
@@ -233,59 +286,6 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Select Book to Return";
             // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(104, 80);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(1);
-            this.dateTimePicker2.MaxDate = new System.DateTime(2100, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker2.MinDate = new System.DateTime(1999, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(186, 20);
-            this.dateTimePicker2.TabIndex = 21;
-            this.dateTimePicker2.Value = new System.DateTime(2026, 5, 4, 14, 32, 3, 0);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(104, 49);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(1);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2100, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker1.MinDate = new System.DateTime(1999, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(186, 20);
-            this.dateTimePicker1.TabIndex = 20;
-            this.dateTimePicker1.Value = new System.DateTime(2026, 5, 4, 14, 32, 3, 0);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(17, 86);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(61, 13);
-            this.label13.TabIndex = 19;
-            this.label13.Text = "Due Date";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(17, 55);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(68, 13);
-            this.label14.TabIndex = 18;
-            this.label14.Text = "Issue Date";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(20, 114);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(270, 31);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Return Book";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -295,6 +295,7 @@
             this.label15.Size = new System.Drawing.Size(144, 12);
             this.label15.TabIndex = 18;
             this.label15.Text = "Developed By Keshan Jayaweera";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // logoutbtn
             // 

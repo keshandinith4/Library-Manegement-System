@@ -41,5 +41,10 @@ namespace Library_Manegement_System
 
             this.Hide();
         }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

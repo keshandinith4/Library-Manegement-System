@@ -40,5 +40,20 @@ namespace Library_Manegement_System
             dashboard.Show();
             this.Hide();
         }
+
+        private void clearbtn_Click(object sender, EventArgs e)
+        {
+            booknamereportfeild.Clear();
+            isbnreportfeild.Clear();
+            memberidfeild.Clear();
+            fullnamefeild.Clear();
+            contactfeild.Clear();
+            emailfeildreport.Clear();
+        }
+
+        private void booknamereportbtn_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

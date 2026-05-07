@@ -33,16 +33,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.isbnreportfeild = new System.Windows.Forms.TextBox();
-            this.booknamereportbtn = new System.Windows.Forms.TextBox();
+            this.booknamereportfeild = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.emailfeildreport = new System.Windows.Forms.TextBox();
+            this.contactfeild = new System.Windows.Forms.TextBox();
             this.fullnamefeild = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.memberidfeild = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -88,7 +88,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel1.Controls.Add(this.isbnreportfeild);
-            this.panel1.Controls.Add(this.booknamereportbtn);
+            this.panel1.Controls.Add(this.booknamereportfeild);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
@@ -104,12 +104,13 @@
             this.isbnreportfeild.Size = new System.Drawing.Size(162, 20);
             this.isbnreportfeild.TabIndex = 6;
             // 
-            // booknamereportbtn
+            // booknamereportfeild
             // 
-            this.booknamereportbtn.Location = new System.Drawing.Point(104, 16);
-            this.booknamereportbtn.Name = "booknamereportbtn";
-            this.booknamereportbtn.Size = new System.Drawing.Size(162, 20);
-            this.booknamereportbtn.TabIndex = 4;
+            this.booknamereportfeild.Location = new System.Drawing.Point(104, 16);
+            this.booknamereportfeild.Name = "booknamereportfeild";
+            this.booknamereportfeild.Size = new System.Drawing.Size(162, 20);
+            this.booknamereportfeild.TabIndex = 4;
+            this.booknamereportfeild.TextChanged += new System.EventHandler(this.booknamereportbtn_TextChanged);
             // 
             // label6
             // 
@@ -152,10 +153,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.emailfeildreport);
+            this.panel2.Controls.Add(this.contactfeild);
             this.panel2.Controls.Add(this.fullnamefeild);
-            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.memberidfeild);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label11);
@@ -165,19 +166,19 @@
             this.panel2.Size = new System.Drawing.Size(290, 162);
             this.panel2.TabIndex = 14;
             // 
-            // textBox1
+            // emailfeildreport
             // 
-            this.textBox1.Location = new System.Drawing.Point(91, 121);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 20);
-            this.textBox1.TabIndex = 7;
+            this.emailfeildreport.Location = new System.Drawing.Point(91, 121);
+            this.emailfeildreport.Name = "emailfeildreport";
+            this.emailfeildreport.Size = new System.Drawing.Size(175, 20);
+            this.emailfeildreport.TabIndex = 7;
             // 
-            // textBox2
+            // contactfeild
             // 
-            this.textBox2.Location = new System.Drawing.Point(91, 90);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(175, 20);
-            this.textBox2.TabIndex = 6;
+            this.contactfeild.Location = new System.Drawing.Point(91, 90);
+            this.contactfeild.Name = "contactfeild";
+            this.contactfeild.Size = new System.Drawing.Size(175, 20);
+            this.contactfeild.TabIndex = 6;
             // 
             // fullnamefeild
             // 
@@ -186,12 +187,12 @@
             this.fullnamefeild.Size = new System.Drawing.Size(175, 20);
             this.fullnamefeild.TabIndex = 5;
             // 
-            // textBox3
+            // memberidfeild
             // 
-            this.textBox3.Location = new System.Drawing.Point(91, 26);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(175, 20);
-            this.textBox3.TabIndex = 4;
+            this.memberidfeild.Location = new System.Drawing.Point(91, 26);
+            this.memberidfeild.Name = "memberidfeild";
+            this.memberidfeild.Size = new System.Drawing.Size(175, 20);
+            this.memberidfeild.TabIndex = 4;
             // 
             // label9
             // 
@@ -280,6 +281,7 @@
             this.clearbtn.TabIndex = 22;
             this.clearbtn.Text = "Clear";
             this.clearbtn.UseVisualStyleBackColor = false;
+            this.clearbtn.Click += new System.EventHandler(this.clearbtn_Click);
             // 
             // Reports
             // 
@@ -314,16 +316,16 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox isbnreportfeild;
-        private System.Windows.Forms.TextBox booknamereportbtn;
+        private System.Windows.Forms.TextBox booknamereportfeild;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox emailfeildreport;
+        private System.Windows.Forms.TextBox contactfeild;
         private System.Windows.Forms.TextBox fullnamefeild;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox memberidfeild;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;

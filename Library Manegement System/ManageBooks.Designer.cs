@@ -31,23 +31,23 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pricefeild = new System.Windows.Forms.TextBox();
+            this.categoryfeild = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.clearbtn = new System.Windows.Forms.Button();
             this.updatebookbtn = new System.Windows.Forms.Button();
             this.deletebookbtn = new System.Windows.Forms.Button();
             this.addbookbtn = new System.Windows.Forms.Button();
-            this.emailfeild = new System.Windows.Forms.TextBox();
-            this.contactfeild = new System.Windows.Forms.TextBox();
-            this.fullnamefeild = new System.Windows.Forms.TextBox();
-            this.memberfeild = new System.Windows.Forms.TextBox();
+            this.isbnfeild = new System.Windows.Forms.TextBox();
+            this.authorfeild = new System.Windows.Forms.TextBox();
+            this.titlefeild = new System.Windows.Forms.TextBox();
+            this.bookidfeild = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.backbtn = new System.Windows.Forms.Button();
@@ -80,17 +80,17 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.pricefeild);
+            this.panel1.Controls.Add(this.categoryfeild);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.clearbtn);
             this.panel1.Controls.Add(this.updatebookbtn);
             this.panel1.Controls.Add(this.deletebookbtn);
             this.panel1.Controls.Add(this.addbookbtn);
-            this.panel1.Controls.Add(this.emailfeild);
-            this.panel1.Controls.Add(this.contactfeild);
-            this.panel1.Controls.Add(this.fullnamefeild);
-            this.panel1.Controls.Add(this.memberfeild);
+            this.panel1.Controls.Add(this.isbnfeild);
+            this.panel1.Controls.Add(this.authorfeild);
+            this.panel1.Controls.Add(this.titlefeild);
+            this.panel1.Controls.Add(this.bookidfeild);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
@@ -100,6 +100,40 @@
             this.panel1.Size = new System.Drawing.Size(290, 293);
             this.panel1.TabIndex = 9;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(16, 188);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(36, 13);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "Price";
+            // 
+            // pricefeild
+            // 
+            this.pricefeild.Location = new System.Drawing.Point(91, 181);
+            this.pricefeild.Name = "pricefeild";
+            this.pricefeild.Size = new System.Drawing.Size(175, 20);
+            this.pricefeild.TabIndex = 14;
+            // 
+            // categoryfeild
+            // 
+            this.categoryfeild.Location = new System.Drawing.Point(91, 146);
+            this.categoryfeild.Name = "categoryfeild";
+            this.categoryfeild.Size = new System.Drawing.Size(175, 20);
+            this.categoryfeild.TabIndex = 13;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(16, 149);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(57, 13);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "Category";
+            // 
             // clearbtn
             // 
             this.clearbtn.Location = new System.Drawing.Point(218, 235);
@@ -108,6 +142,7 @@
             this.clearbtn.TabIndex = 11;
             this.clearbtn.Text = "Clear ";
             this.clearbtn.UseVisualStyleBackColor = true;
+            this.clearbtn.Click += new System.EventHandler(this.clearbtn_Click);
             // 
             // updatebookbtn
             // 
@@ -117,6 +152,7 @@
             this.updatebookbtn.TabIndex = 10;
             this.updatebookbtn.Text = "Update Book";
             this.updatebookbtn.UseVisualStyleBackColor = true;
+            this.updatebookbtn.Click += new System.EventHandler(this.updatebookbtn_Click);
             // 
             // deletebookbtn
             // 
@@ -126,6 +162,7 @@
             this.deletebookbtn.TabIndex = 9;
             this.deletebookbtn.Text = "Delete Book";
             this.deletebookbtn.UseVisualStyleBackColor = true;
+            this.deletebookbtn.Click += new System.EventHandler(this.deletebookbtn_Click);
             // 
             // addbookbtn
             // 
@@ -135,34 +172,35 @@
             this.addbookbtn.TabIndex = 8;
             this.addbookbtn.Text = "+ Add Book";
             this.addbookbtn.UseVisualStyleBackColor = true;
+            this.addbookbtn.Click += new System.EventHandler(this.addbookbtn_Click);
             // 
-            // emailfeild
+            // isbnfeild
             // 
-            this.emailfeild.Location = new System.Drawing.Point(91, 112);
-            this.emailfeild.Name = "emailfeild";
-            this.emailfeild.Size = new System.Drawing.Size(175, 20);
-            this.emailfeild.TabIndex = 7;
+            this.isbnfeild.Location = new System.Drawing.Point(91, 112);
+            this.isbnfeild.Name = "isbnfeild";
+            this.isbnfeild.Size = new System.Drawing.Size(175, 20);
+            this.isbnfeild.TabIndex = 7;
             // 
-            // contactfeild
+            // authorfeild
             // 
-            this.contactfeild.Location = new System.Drawing.Point(91, 81);
-            this.contactfeild.Name = "contactfeild";
-            this.contactfeild.Size = new System.Drawing.Size(175, 20);
-            this.contactfeild.TabIndex = 6;
+            this.authorfeild.Location = new System.Drawing.Point(91, 81);
+            this.authorfeild.Name = "authorfeild";
+            this.authorfeild.Size = new System.Drawing.Size(175, 20);
+            this.authorfeild.TabIndex = 6;
             // 
-            // fullnamefeild
+            // titlefeild
             // 
-            this.fullnamefeild.Location = new System.Drawing.Point(91, 49);
-            this.fullnamefeild.Name = "fullnamefeild";
-            this.fullnamefeild.Size = new System.Drawing.Size(175, 20);
-            this.fullnamefeild.TabIndex = 5;
+            this.titlefeild.Location = new System.Drawing.Point(91, 49);
+            this.titlefeild.Name = "titlefeild";
+            this.titlefeild.Size = new System.Drawing.Size(175, 20);
+            this.titlefeild.TabIndex = 5;
             // 
-            // memberfeild
+            // bookidfeild
             // 
-            this.memberfeild.Location = new System.Drawing.Point(91, 17);
-            this.memberfeild.Name = "memberfeild";
-            this.memberfeild.Size = new System.Drawing.Size(175, 20);
-            this.memberfeild.TabIndex = 4;
+            this.bookidfeild.Location = new System.Drawing.Point(91, 17);
+            this.bookidfeild.Name = "bookidfeild";
+            this.bookidfeild.Size = new System.Drawing.Size(175, 20);
+            this.bookidfeild.TabIndex = 4;
             // 
             // label7
             // 
@@ -212,40 +250,6 @@
             this.label3.Size = new System.Drawing.Size(72, 13);
             this.label3.TabIndex = 10;
             this.label3.Text = "Books Details";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(16, 149);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(57, 13);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "Category";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(91, 146);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 20);
-            this.textBox1.TabIndex = 13;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(91, 181);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(175, 20);
-            this.textBox2.TabIndex = 14;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(16, 188);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(36, 13);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Price";
             // 
             // label10
             // 
@@ -331,17 +335,17 @@
         private System.Windows.Forms.Button updatebookbtn;
         private System.Windows.Forms.Button deletebookbtn;
         private System.Windows.Forms.Button addbookbtn;
-        private System.Windows.Forms.TextBox emailfeild;
-        private System.Windows.Forms.TextBox contactfeild;
-        private System.Windows.Forms.TextBox fullnamefeild;
-        private System.Windows.Forms.TextBox memberfeild;
+        private System.Windows.Forms.TextBox isbnfeild;
+        private System.Windows.Forms.TextBox authorfeild;
+        private System.Windows.Forms.TextBox titlefeild;
+        private System.Windows.Forms.TextBox bookidfeild;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox pricefeild;
+        private System.Windows.Forms.TextBox categoryfeild;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label10;
